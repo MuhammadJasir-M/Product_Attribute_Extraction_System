@@ -95,8 +95,8 @@ def filter_out_non_buying(urls):
     return filtered
 
 if __name__ == "__main__":
-    GOOGLE_API_KEY = "AIzaSyD7v44XdLKTUkuHMrj4MRNLntzc2s_wtpY"
-    GOOGLE_CSE_ID = "17187382183ab433f"
+    GOOGLE_API_KEY = "YOUR_API_KEY"
+    GOOGLE_CSE_ID = "YOUR_CSE_ID"
 
     query = input("Enter product search query: ").strip()
     fetched_urls = fetch_product_links(query, GOOGLE_API_KEY, GOOGLE_CSE_ID)
@@ -109,4 +109,5 @@ if __name__ == "__main__":
 
     print("\n---- Genuine Products Queue ----")
     for product in valid_products_queue:
+
         print(f"{product['title']} | {product['url']}")
