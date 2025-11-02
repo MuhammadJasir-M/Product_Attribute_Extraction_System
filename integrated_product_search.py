@@ -562,8 +562,8 @@ class CompleteIntegratedPipeline:
 
 
 if __name__ == "__main__":
-    GOOGLE_API_KEY = "AIzaSyD7v44XdLKTUkuHMrj4MRNLntzc2s_wtpY"
-    GOOGLE_CSE_ID = "17187382183ab433f"
+    GOOGLE_API_KEY = "YOUR_API_KEY"
+    GOOGLE_CSE_ID = "YOUR_API_KEY"
 
     pipeline = CompleteIntegratedPipeline(GOOGLE_API_KEY, GOOGLE_CSE_ID)
 
@@ -589,4 +589,5 @@ if __name__ == "__main__":
 
     except Exception as e:
         print(f"Pipeline error: {e}")
+
         sys.exit(1)
