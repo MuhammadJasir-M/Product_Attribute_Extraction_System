@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 import ssl
 import socket
 
-SAFE_BROWSING_API_KEY = "AIzaSyCNmnurQtUXdEwg43OvqGA-3mNSEx57h1Q"
+SAFE_BROWSING_API_KEY = "YOUR_API_KEY"
 
 def is_valid_url(url: str) -> bool:
     result = validators.url(url)
@@ -114,4 +114,5 @@ if __name__ == "__main__":
     filtered_urls = check_urls(urls)
     print("\n---- Genuine Products Queue ----")
     for item in filtered_urls:
+
         print(f"{item['title']} | {item['url']}")
